@@ -1,0 +1,33 @@
+@import 'variables';
+#contact {
+    /*    height: 80vh;*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/footer/world-map.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    .form-group {
+        margin-bottom: 16px;
+    }
+}
+
+
+footer {
+    font-size: 12px;
+    padding: 20px 0px;
+    .row:first-child {
+        margin-bottom: 0px;
+    }
+    p {
+        line-height: 40px;
+    }
+    a {
+        text-decoration: none;
+        color: #333;
+        margin-right: 15px;
+        &:hover {
+            text-decoration: none;
+            color: #333;
+        }
+    }
+}
+

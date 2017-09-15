@@ -1,0 +1,41 @@
+@import 'variables';
+@media screen and (max-width: 767px) {
+    /*    zmienmy style dla progu w ktorym zmienia je bootstrap*/
+    /*    menu kolor bialy*/
+    #brand {
+        color: $color-blue;
+    }
+    .navbar-default {
+        background-color: $color-white;
+        .navbar-nav {
+            li {
+                a {
+                    color: $color-blue;
+                }
+            }
+        }
+        .navbar-toggle {
+            .icon-bar {
+                background-color: $color-blue;
+                &:focus,
+                &:hover {
+                    background-color: $color-white;
+                }
+            }
+            &:focus,
+            &:hover {
+                background-color: $color-blue;
+            }
+        }
+    }
+    
+    
+    /*    pozycje po rozinieciu przylgniete do prawej*/
+    .navbar-collapse {
+        text-align: right;
+    }
+    /*    dla sekcji team, doloz marines u góry zeby je troche odsunac*/
+    #team figure {
+        margin-top: 20px;
+    }
+}

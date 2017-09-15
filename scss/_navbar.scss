@@ -1,0 +1,50 @@
+@import 'variables';
+
+//.navbar-default .navbar-nav
+.navbar-default {
+    
+    border: none;
+    background-color: transparent;
+    transition: all 0.5s;
+    
+    .navbar-nav {
+        li {
+            a {
+                font-family: 'Montserrat', sans-serif;
+                color: $color-white;
+                font-weight: $font-big;
+            }
+        }
+    }
+    /*tranzycje na hovery*/
+    .navbar-toggle {
+        transition: all 0.5s;
+    }
+}
+
+/*stylowanie brandu*/
+#brand {
+    font-family: 'Droid Serif', sans-serif;
+    font-style: italic;
+    color: $color-white;
+    font-weight: normal;
+}
+#main-nav {
+    a {
+        &:hover {
+            color: $color-blue;
+        }
+    }
+    
+    .scrolled-link {
+        color: #f7f7f7;
+        &:hover {
+            color: #222222;
+        }
+    }
+}
+
+/*klasa zmieniajaca nam menu*/
+.scrolled-menu {
+    background-color: rgba(14, 216, 214, 0.5);
+}
